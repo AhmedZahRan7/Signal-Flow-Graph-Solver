@@ -1,0 +1,67 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="top_center" hgap="1" vgap="1"
+          stylesheets="@style.css">
+
+    <Label GridPane.rowIndex="0" style="-fx-font-size:20" >Enter a new node</Label>
+    <Label GridPane.rowIndex="1" GridPane.columnIndex="0">Node name :</Label>
+    <TextField  fx:id="inputNewNode" GridPane.rowIndex="1" GridPane.columnIndex="1" maxWidth="100" maxHeight="20" />
+    <Button GridPane.rowIndex="1" GridPane.columnIndex="2" minHeight="0" maxHeight="25"
+            minWidth="80" onAction="#inputEntered" fx:id="enterNewNodeButton">Enter</Button>
+
+    <Label GridPane.rowIndex="2" style="-fx-font-size:20">  </Label>
+
+    <Label GridPane.rowIndex="3" style="-fx-font-size:20">Enter a new edge</Label>
+    <Label GridPane.rowIndex="4" GridPane.columnIndex="0">from :</Label>
+    <TextField  fx:id="inputEdgeFrom" GridPane.rowIndex="4" GridPane.columnIndex="1" maxWidth="100" maxHeight="20" />
+    <Label GridPane.rowIndex="5" GridPane.columnIndex="0">To :</Label>
+    <TextField  fx:id="inputEdgeTo" GridPane.rowIndex="5" GridPane.columnIndex="1" maxWidth="100" maxHeight="20" />
+    <Label GridPane.rowIndex="6" GridPane.columnIndex="0">Value :</Label>
+    <TextField  fx:id="inputEdgeWeight" GridPane.rowIndex="6" GridPane.columnIndex="1" maxWidth="100" maxHeight="20" />
+    <Button GridPane.rowIndex="4" GridPane.columnIndex="2" GridPane.rowSpan="3" minHeight="70" maxHeight="95"
+            minWidth="80" onAction="#inputEntered" fx:id="enterNewEdgeButton">Enter</Button>
+
+    <Label GridPane.rowIndex="7" style="-fx-font-size:20">  </Label>
+
+    <Label GridPane.rowIndex="8" style="-fx-font-size:20">Remove an edge</Label>
+    <Label GridPane.rowIndex="9" GridPane.columnIndex="0">from :</Label>
+    <TextField  fx:id="removeEdgeFrom" GridPane.rowIndex="9" GridPane.columnIndex="1" maxWidth="100" maxHeight="20" />
+    <Label GridPane.rowIndex="10" GridPane.columnIndex="0">To :</Label>
+    <TextField  fx:id="removeEdgeTo" GridPane.rowIndex="10" GridPane.columnIndex="1" maxWidth="100" maxHeight="20" />
+    <Button GridPane.rowIndex="9" GridPane.columnIndex="2" GridPane.rowSpan="2" minHeight="40" maxHeight="65"
+            onAction="#inputEntered" fx:id="removeEdgeButton">Remove</Button>
+
+    <Label GridPane.rowIndex="11" style="-fx-font-size:20">  </Label>
+
+    <Label GridPane.rowIndex="12" style="-fx-font-size:20">Remove a node</Label>
+    <Label GridPane.rowIndex="13" GridPane.columnIndex="0">Node name: </Label>
+    <TextField  fx:id="removeNodeEntry" GridPane.rowIndex="13" GridPane.columnIndex="1" maxWidth="100" maxHeight="20" />
+    <Button GridPane.rowIndex="13" GridPane.columnIndex="2" minHeight="0" maxHeight="25"
+            onAction="#inputEntered" fx:id="removeNodeButton">Remove</Button>
+
+    <Label GridPane.rowIndex="14" style="-fx-font-size:20">  </Label>
+    <Label GridPane.rowIndex="15" style="-fx-font-size:20">  </Label>
+
+    <Button GridPane.rowIndex="16" GridPane.rowSpan="2" GridPane.columnIndex="0" minHeight="50" maxHeight="65"
+            onAction="#inputEntered" fx:id="showGraphButton" alignment="CENTER" maxWidth="Infinity"
+            style="-fx-background-color:#19925b;" >Show the graph</Button>
+    <Button GridPane.rowIndex="16" GridPane.rowSpan="2" GridPane.columnIndex="1" minHeight="50" maxHeight="65"
+            onAction="#inputEntered" fx:id="solveGraphButton" alignment="BASELINE_CENTER" maxWidth="Infinity"
+            style="-fx-background-color:#d16c6a;">Solve</Button>
+
+    <Label GridPane.rowIndex="16" GridPane.columnIndex="2" maxWidth="Infinity" alignment="CENTER">start point:</Label>
+    <Label GridPane.rowIndex="17" GridPane.columnIndex="2" maxWidth="Infinity" alignment="CENTER">sink point:</Label>
+    <TextField  fx:id="inputSolveFrom" GridPane.rowIndex="16" GridPane.columnIndex="3" maxWidth="50" maxHeight="5" />
+    <TextField  fx:id="inputSolveTo" GridPane.rowIndex="17" GridPane.columnIndex="3" maxWidth="50" maxHeight="5" />
+
+
+    <Label GridPane.rowIndex="18" style="-fx-font-size:20">  </Label>
+    <Label GridPane.rowIndex="19" style="-fx-font-size:20">Answer is</Label>
+    <TextField  fx:id="answer" GridPane.rowIndex="19" GridPane.columnIndex="1" minWidth="100"
+                maxHeight="100" GridPane.columnSpan="2" disable="true"/>
+
+</GridPane>

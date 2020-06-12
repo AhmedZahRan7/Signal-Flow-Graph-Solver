@@ -1,0 +1,24 @@
+graph {
+	fill-color: #DFDCE5FF;
+}
+
+node {
+	size: 30px, 30px;
+	text-mode: truncated;
+	text-color:#0B0B3B;
+	fill-color: #00a7d4;
+	text-alignment: under;
+	text-size: 20;
+}
+
+edge{
+    fill-color:#2F4F4F;
+	text-alignment: along;
+	shape: cubic-curve;
+	arrow-size: 15;
+	text-size: 15;
+	text-color: #0B0B3B;
+}
+
+node:clicked {
+}

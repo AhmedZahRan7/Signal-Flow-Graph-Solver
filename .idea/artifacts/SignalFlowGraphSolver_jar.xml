@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SignalFlowGraphSolver:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/SignalFlowGraphSolver_jar</output-path>
+    <root id="archive" name="SignalFlowGraphSolver.jar">
+      <element id="module-output" name="SignalFlowGraphSolver" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/GUIUtilies/gs-algo-1.3/gs-algo-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/GUIUtilies/gs-core-1.3/gs-core-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/GUIUtilies/gs-ui-1.3/gs-ui-1.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
